@@ -23,13 +23,17 @@ cd to the directory in which you wish to keep your test apps
 
 To check the version of node you just installed, fire below command:
 
-`> node --version`
+```bash
+> node --version
+```
 
 ## Install Express Generator
 
 Now that we have Node running, we need the rest of the stuff we're going to actually use to create a working website. To do that we're going to install Express, which is a framework that takes Node from a barebones application and turns it into something that behaves more like the web servers we're all used to working with (and actually quite a bit more than that). We need to start with Express-Generator, which is actually different than Express itself ... it's a scaffolding app that creates a skeleton for express-driven sites. In your command prompt, type the following:
 
-`C:\node>npm install -g express-generator`
+```bash
+C:\node>npm install -g express-generator
+```
 
 The generator should auto-install, and since it (like all packages installed with -g) lives in your master NPM installation directory, it should already be available in your system path. So let's use our generator to create the scaffolding for a website.
 
@@ -40,7 +44,10 @@ As we are going to use Express, we need to keep in mind that it uses Jade as its
 
 Now, In c:\node or wherever you're storing your node apps, type this:
 
-`C:\node>express nodetest1`
+```bash
+C:\node>express nodetest1
+```
+
 
 This will create a skeleton express application which will have directory structure something like below:
 
@@ -66,7 +73,7 @@ create : nodetest1/bin/www
 
 Now, at the root of the Express project we have `package.json` file. Basically, this file holds various metadata relevant to the project. This file is used to give information to npm that allows it to identify the project as well as handle the project's dependencies. Basic structure of `package.json` looks somewhat like below:
 
-```
+```json
 {
     "name": "nodetest1",
     "version": "0.0.0",
@@ -88,19 +95,28 @@ Now, at the root of the Express project we have `package.json` file. Basically, 
 
 The dependencies that we have defined for our project can be installed using command below:
 
-`C:\node\nodetest1>npm install`
+```bash
+C:\node\nodetest1>npm install
+```
 
 Where `nodetest1` is our `Express` project directory. All the installed dependencies will reside in the folder `node_modules`. One can use the dependency in `.js` file using function `require()`.
 
-e.g. `require('morgan');`
+e.g. 
+```javascript
+require('morgan');
+```
 
 Now, our Express project gets setup. It's time now to run the project. Head over to project directory and fire below command:
 
-`C:\node\nodetest1>node ./bin/www`
+```bash
+C:\node\nodetest1>node ./bin/www
+```
 
 OR
 
-`C:\node\nodetest1>node app.js`
+```bash
+C:\node\nodetest1>node app.js
+```
 
 As entry point for any Express project is `app.js`
 
