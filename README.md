@@ -1,4 +1,4 @@
-# Kickstart with Express.js and Node
+# Kickstart with Node.js and Express
 
 This document describes the initial steps to get started with Node.js and ultimately with Express.js
 
@@ -122,7 +122,7 @@ As entry point for any Express project is `app.js`
 
 Everything working? Awesome! Open a browser and head for [http://localhost:3000](http://localhost:3000) where you will see a welcome to Express page.
 
-so folks! That's about setting up Node.js and making Express.js up and running.
+So folks! That's about setting up Node.js and making Express.js up and running. 
 
 Let me know if you find any issues with this document. Suggestions are welcomed.
 
